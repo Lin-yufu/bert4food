@@ -10,11 +10,11 @@
 
 1. 词云生成
 
-![image-20230618133004066](E:\code\bert4food\assets\image-20230618133004066.png)
+![image-20230618133004066](./assets/image-20230618133004066.png)
 
 2. 情感分析
 
-   ![image-20230618133018435](E:\code\bert4food\assets\image-20230618133018435.png)
+   ![image-20230618133018435]./assets/image-20230618133018435.png)
 
 ![image-20230618133023128](E:\code\bert4food\assets\image-20230618133023128.png)
 
@@ -22,7 +22,7 @@
 
 为了加速响应前端请求，后端会开启线程池访问模型。
 
-![img](E:\code\bert4food\assets\clip_image002.png)
+![img](./assets/clip_image002.png)
 
 ## 开发环境
 
@@ -39,7 +39,7 @@
    * 安装后端框架：Flask, Flask-sqlalchemy, pymysql,wordcloud, jieba
    * mysql建一个数据库：bert
    * 将create_table.py, app.py, BertAPI.py中的数据库连接部分修改成自己的数据库内容。
-   * 后端文件目录如下图所示：![image-20230618134113023](E:\code\bert4food\assets\image-20230618134113023.png)
+   * 后端文件目录如下图所示：![image-20230618134113023](./assets/image-20230618134113023.png)
 
 2. 模型训练:模型基于BERT-CHINESE-BASE模型，请访问以下链接，将模型放入/backend/BertSentiment/bert_pretrain 中：
 
