@@ -2,9 +2,9 @@
 
 ## 介绍
 
-1.nlp的大作业，实现了一个基于预训练Bert的情感分析以及使用jieba分词生成小黑子词云。
+1. nlp的大作业，实现了一个基于预训练Bert的情感分析以及使用jieba分词生成小黑子词云。
 
-2.前后分离，后端用Flask，前端用的vue，后台模板来自https://github.com/PanJiaChen/vue-admin-template
+2. 前后分离，后端用Flask，前端用的vue，后台模板来自https://github.com/PanJiaChen/vue-admin-template
 
 ## 系统展示
 
@@ -15,6 +15,8 @@
 2. 情感分析
 
    ![image-20230618133018435](./assets/image-20230618133018435.png)
+
+
 
 ![image-20230618133023128](./assets/image-20230618133023128.png)
 
@@ -36,10 +38,20 @@
 1. 后端部署：/backend
 
    * 安装深度学习依赖：pytorch, numpy, scikit-learn, tqdm, tensorboardX
+
    * 安装后端框架：Flask, Flask-sqlalchemy, pymysql,wordcloud, jieba
+
    * mysql建一个数据库：bert
+
    * 将create_table.py, app.py, BertAPI.py中的数据库连接部分修改成自己的数据库内容。
-   * 后端文件目录如下图所示：![image-20230618134113023](./assets/image-20230618134113023.png)
+
+   * 建一个feedback表：运行create_table.py。
+
+   * 可以塞点数据进去测试一下效果。
+
+   * 后端文件目录如图所示：
+
+     ![image-20230618134113023](./assets/image-20230618134113023.png)
 
 2. 模型训练:模型基于BERT-CHINESE-BASE模型，请访问以下链接，将模型放入/backend/BertSentiment/bert_pretrain 中：
 
@@ -57,5 +69,5 @@
 
    * 安装node.js
    * 进入/frontend，npm install
-   * 可能需要修改后端的端口，路径在/frontend/vue.config.js中，将http://127.0.0.1:xxx修改成你的Flask后端运行端口。
+   * 可能需要修改后端的端口，路径在/frontend/vue.config.js中，将http://127.0.0.1:xxx 修改成你的Flask后端运行端口。
    * 运行：npm run dev
